@@ -1,0 +1,40 @@
+.categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+    &__titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-family: $font-principal;
+        font-size: 30px;
+    }
+    &__parrafo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        color: $parrafo-color;
+        font-family: $font-parrafo;
+    }
+    &__contenido {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    &__images {
+        margin-bottom: 2rem;
+        &:hover {
+            transition: all .4s;
+            box-shadow: 0 5px 20px $box-shadow-color;
+        }
+    }
+}
